@@ -47,6 +47,7 @@ def map_pixels(x: torch.Tensor) -> torch.Tensor:
 		raise ValueError('expected input to be 4d')
 	if x.dtype != torch.float:
 		raise ValueError('expected input to have type float')
+	# please contact me at cruise.publish@gmail.com for your project, don't through the wechat.
 
 	return (1 - 2 * logit_laplace_eps) * x + logit_laplace_eps
 
